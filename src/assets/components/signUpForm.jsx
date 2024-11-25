@@ -40,7 +40,7 @@ function SignUpForm(){
                                    <input type="number" id='phoneNumber' placeholder="phone Number"/>
                             </div>
                             <div className={styles.buttonDiv}>
-                                   <button type="submit" className={styles.buttonGroup} >Login</button>
+                                   <button type="submit" className={styles.buttonGroup} >Sign Up</button>
                             </div>
                             <Link to="/login" className={styles.signUp}>Already have an account, Login </Link>
                             

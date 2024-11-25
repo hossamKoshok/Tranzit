@@ -1,4 +1,5 @@
 import styles from '../styles/Form.module.css'
+import {Link} from 'react-router-dom'
 
 function Form(){
 
@@ -21,6 +22,8 @@ function Form(){
                             <div className={styles.buttonDiv}>
                                    <button type="submit" className={styles.buttonGroup} >Login</button>
                             </div>
+                            <Link to="/signup" className={styles.signUp}>Dont have an account, Sign up</Link>
+                            <Link to="#" className={styles.forgotPassword}>Forgot Password?</Link>    
 
                      </form>
 

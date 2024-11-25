@@ -1,0 +1,160 @@
+.signUpGroup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+    justify-content: center;
+
+}
+.line{
+    background-color: #E9271D;
+    width: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    background-color: rgba(0, 0, 0, 0.18);
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.aboutHeading{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.aboutText{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    top:5%;
+}
+.formHeading{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: "Outfit", sans-serif;
+    color: black;
+}
+.userGroup{ 
+    z-index: 1;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    color: black;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.Email{
+    z-index: 1;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    color: black;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.passGroup{
+    z-index: 1;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    color: black;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.phoneNumber{
+    z-index: 1;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    color: black;
+    width: 80%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.buttonDiv{
+    margin-top: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.buttonGroup{
+    z-index: 1;
+    font-family: "Outfit", sans-serif;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    background-color: #E9271D;
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+.buttonGroup:hover{
+    background-color: #b11a12;
+    z-index: 1;
+}
+.userGroup input,
+.passGroup input,
+.phoneNumber input,
+.Email input{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.signUp{
+  margin-top: 0.5rem;
+    color: #1E1E1E;
+    text-decoration: underline;
+}
+.forgotPassword{
+    margin-top: 0.1rem;
+    color: #B3B3B3;
+    text-decoration: underline;
+}
+.signUp:hover,.forgotPassword:hover{
+    color: #E9271D;
+}
+.logo{
+  scale: 0.065;
+  z-index: 100;
+}
+

@@ -21,7 +21,7 @@ header {
 nav {
   height: 5vh;
   width: 100vw;
-  background: #E9271D;
+  background: #e9271dd3;
   
   display: flex;
   justify-content: center;
@@ -70,4 +70,21 @@ nav a:hover{
   text-decoration: none;
   color:  #ffffff;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    
+    height: auto;
+  }
+
+  nav ul {
+    width: 100%;
+   
+  }
+
+  nav li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }

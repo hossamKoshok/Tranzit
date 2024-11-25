@@ -2,7 +2,7 @@
     background-color: white;
     border-radius: 4.5rem;
     width: 35rem;
-    height: 20rem;
+    height: 25rem;
     z-index: 1;
     align-self: center;
     display: flex;
@@ -56,7 +56,7 @@
     border-radius: 1rem;
     border: none;
     background-color: #E9271D;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@
 .passGroup input {
     color: black;
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     border: 1px solid #ccc;
     padding: 0.5rem;
     width: 100%;
@@ -83,5 +83,37 @@
     top: -15%;
     scale: 0.9;
     
+}
+.signUp{
+  margin-top: 0.5rem;
+    color: #1E1E1E;
+    text-decoration: underline;
+}
+.forgotPassword{
+    margin-top: 0.1rem;
+    color: #B3B3B3;
+    text-decoration: underline;
+}
+.signUp:hover,.forgotPassword:hover{
+    color: #E9271D;
+}
+
+
+@media (max-width: 600px) {
+    .loginForm {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+    .formGroup, .userGroup, .passGroup, .buttonDiv {
+        width: 100%;
+    }
+    .buttonGroup {
+        font-size: 1rem;
+    }
+    .formImage {
+        top: -10%;
+        scale: 0.8;
+    }
 }
 

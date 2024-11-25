@@ -36,7 +36,7 @@ function SignUpForm(){
                                    <input type="tel" id='phoneNumber' placeholder="phone Number" pattern='+20[0-9]{10}'/>
                             </div>
                             <div className={styles.buttonDiv}>
-                                   <button type="submit" className={styles.buttonGroup} >Login</button>
+                                   <button type="submit" className={styles.buttonGroup} >Sign Up</button>
                             </div>
                             <Link to="/login" className={styles.signUp}>Already have an account, Login </Link>
                             

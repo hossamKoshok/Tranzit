@@ -8,11 +8,7 @@ function SignUpForm(){
               <div className={styles.signUpGroup}>
                      <div className={styles.about}>
                             <h2 className={styles.aboutHeading}>Our Goals</h2>
-                            <p className={styles.aboutText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                                   It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                                   and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p className={styles.aboutText}>The primary goal of our National Railway Company is to establish a world-class transportation network that seamlessly connects regions, enhances economic growth, and fosters sustainable development. We aim to deliver reliable, efficient, and safe rail services that cater to the needs of passengers and freight, driving innovation and modernization across all operations. By prioritizing customer satisfaction, adopting cutting-edge technology, and investing in infrastructure, we strive to reduce environmental impact, promote regional integration, and contribute to national prosperity.</p>
                      </div>
                      <div className={styles.line}><img src='../images/logo.png' alt="logo" className={styles.logo}/></div>
                      <div className={styles.signUpForm}>
@@ -36,8 +32,8 @@ function SignUpForm(){
                                    <input type="password" id='Confirmpassword' placeholder="Confirm password" />
                             </div>
                             <div className={styles.phoneNumber}>
-                                   <label htmlFor="phoneNumber">Phone Number</label>
-                                   <input type="number" id='phoneNumber' placeholder="phone Number"/>
+                                   <label htmlFor="phoneNumber">Phone Number</label>       
+                                   <input type="tel" id='phoneNumber' placeholder="phone Number" pattern='+20[0-9]{10}'/>
                             </div>
                             <div className={styles.buttonDiv}>
                                    <button type="submit" className={styles.buttonGroup} >Login</button>

@@ -158,3 +158,43 @@
   z-index: 100;
 }
 
+@media (max-width: 600px) {
+     .signUpGroup {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+    }
+      .signUpForm {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 2rem;
+        height: 90%;
+    }
+    .form{
+        top: 0;
+        scale: 0.9;
+    }
+    .form, .userGroup, .passGroup, .buttonDiv, .Email, .phoneNumber{
+        width: 100%;
+        padding: 0.1rem;
+    }
+    .buttonDiv{
+        margin-top: 0.5rem;
+    }
+    .formHeading, .aboutHeading {
+        font-size: 2.5rem;
+    }
+    .aboutText, .userGroup, .Email, .passGroup, .phoneNumber {
+        font-size: 1rem;
+    }
+    .buttonGroup {
+        font-size: 1rem;
+    }
+    .line{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+}
+

@@ -5,7 +5,7 @@ import ScenerySignup from './assets/components/ScenerySignup'
 import {BrowserRouter,Route, Link,Switch} from 'react-router-dom'
 import MainNav from './assets/components/MainNav'
 import LoginBar from './assets/components/LoginBar'
-
+import Home from './assets/components/Home'
 function App() {
 
   return (
@@ -18,6 +18,7 @@ function App() {
         <MainNav/>
         <div>
         <Switch>
+        <Route exact path="/"> <Home/></Route>
         <Route exact path="/login"> <Scenery/></Route>
         <Route exact path="/signup" > <ScenerySignup/></Route>
         </Switch> 

@@ -15,15 +15,15 @@ function SignUpForm() {
   const validate = (users) => {
    const errors = {};
    const telPattern = /^\+20\d{10}$/;
-    const passwordPattern =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+//     const passwordPattern = /^w/;
+//       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if(!users.username) {
       errors.username = "Username is required";
     }
-    else if(Users.find((user) => user.username === users.username)) {
-      errors.username = "Username already exists";
-    }
+//     else if(Users.find((user) => user.username === users.username)) {
+//       errors.username = "Username already exists";
+//     }
     if(!users.password) {
        errors.password = "Password is required";
     
@@ -43,9 +43,9 @@ function SignUpForm() {
   if(users.email && !emailPattern.test(users.email)) {
     errors.email = "Email is not valid";
   }
-  if(users.confirmPassword &&!passwordPattern.test(users.password)) {
-    errors.password = "Password is not valid";
-  }
+//   if(users.confirmPassword &&!passwordPattern.test(users.password)) {
+//     errors.password = "Password is not valid";
+//   }
   if(users.password !== users.confirmPassword) {
     errors.confirmPassword = "Passwords do not match";
   }
@@ -114,12 +114,16 @@ function SignUpForm() {
                 onChange={(e) => setUsers({ ...Users, TEL: e.target.value })}
               />
               <p className = {styles.error}>{errors.tel}</p>
+
             </div>
+            <div>{Object.keys(errors).length === 0 && isSubmit? (<div className={styles.success}> Form submitted successfully</div>) : ""}</div>
+
             <div className={styles.buttonDiv}>
-              
                 <button type="submit" className={styles.buttonGroup}>
                   Sign Up
                 </button>
+
+                
              
             </div>
             <Link to="/login" className={styles.signUp}>

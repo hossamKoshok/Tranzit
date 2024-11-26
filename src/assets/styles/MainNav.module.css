@@ -97,10 +97,6 @@ nav a:hover{
 
 
 @media (max-width: 600px) {
-  nav {
-    
-    height: auto;
-  }
 
   nav ul {
     width: 100%;
@@ -111,7 +107,10 @@ nav a:hover{
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
-  .logo{
+  .logodiv{
+    display: none;
+  }
+  .logindiv{
     display: none;
   }
 }

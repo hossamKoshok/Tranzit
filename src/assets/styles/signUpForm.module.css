@@ -7,6 +7,10 @@
     
 
 }
+.error{
+    color : red;
+    font-size: 0.8rem;
+}
 .line{
     background-color: #E9271D;
     width: 0.3rem;

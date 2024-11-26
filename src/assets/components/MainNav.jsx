@@ -22,7 +22,7 @@ function MainNav(){
         </div>
         
         <div className={styles.logindiv}>
-        <LoginBar/>
+        <LoginBar className={styles.loginBar}/>
         </div>
       </nav>
     </header>

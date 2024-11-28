@@ -80,7 +80,7 @@ function SignUpForm() {
           <h1 className={styles.formHeading}>Sign Up</h1>
           <div className={styles.userGroup}>
             <label htmlFor="username">Username</label>
-            <input type="text" id="username" placeholder="Username" value={Users.username} onChange={(e) => setUsers({ ...Users, username: e.target.value })} />
+            <input type="text" id="username" placeholder="Username" key={errors.length== 0 && isSubmit ? "1" : "2"} value={Users.username} onChange={(e) => setUsers({ ...Users, username: e.target.value })} />
             <p className={styles.error}>{errors.username}</p>
           </div>
           <div className={styles.Email}>

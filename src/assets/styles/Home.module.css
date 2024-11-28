@@ -1,184 +1,204 @@
-.homePage{
-    display: flex;
-    background-color: #ffffff;
-    color: #ffffff;
-    overflow-x: scroll;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
+.homePage {
+  display: flex;
+  background-color: #ffffff;
+  color: #ffffff;
 
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  margin-top: 20rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+.merger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+.word {
+  position: relative;
+  top: 12rem;
+  left: 1rem;
+  gap: 2rem;
 
-.homePage li
-{
-    list-style: none;
+  display: flex;
+  flex-direction: column;
 }
-
-.trainSelector
-{
-    position: relative;
-    bottom: 9.6rem;
-    left: 41.875rem;
+.twoCards {
+  display: flex;
+  gap: 2rem;
 }
-.trainSelector button
-{
-    width: auto;
-    height: 2.4rem;
-    margin: 0px;
-    border-top-left-radius:1.125rem;
-    border-top-right-radius: 1.125rem;
-    padding: 0.3125rem 1.25rem;
-    text-align: center;
-    filter: drop-shadow(0px 10px 20px  #0000009e);
-    background-color: white;
-    color: black;
+.word h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
-.trainSelector ul
-{
-    display: flex;
+.supporters {
+  margin-top: 15rem;
+  margin-left: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+   font-size: 2rem;
 }
-
-.homeBookingWidget{
-    position: relative;
-    background-color: white;
-    border-radius: 6.6rem;
-    height: 17.625rem;
-    width:62.5rem;
-    filter: drop-shadow(0px 10px 20px  #0000009e);
-    align-items: left;
-}
-.tripSelector
-{
-    position: relative;
-    align-items: left;
-    display: flex;
-    left: 5rem;
-    top: 2rem;
-}
-.tripSelector button
-{
-    background-color: #ffffff;
-    width: auto;
-    height: 2.5rem;
-    border-radius:1.4375rem;
-    border-color: black;
-    border-style: solid;
-    color: black;
-    font-size:1.25rem;
-    font-weight: 400;
-    justify-content: center;
-    padding: 0.3125rem 1.25rem;
-    text-align: center;
-}
-.tripSelector ul
-{
-    display: flex;
-    gap: 10px;
+.supporters h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
-.inputData
-{
-    display: flex;
-    position: relative;
-    top: 3rem;
-    right: 10rem;
-    left: 3rem;
+.homePage li {
+  list-style: none;
 }
 
-.inputData ul
-{
-    display: flex;
-    gap: 20px;
+.trainSelector {
+  position: relative;
+  bottom: 9.6rem;
+  left: 41.875rem;
+}
+.trainSelector button {
+  width: auto;
+  height: 2.4rem;
+  margin: 0px;
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+  padding: 0.3125rem 1.25rem;
+  text-align: center;
+  filter: drop-shadow(0px 10px 20px #0000009e);
+  background-color: white;
+  color: black;
+}
+.trainSelector ul {
+  display: flex;
 }
 
-#labelFrom
-{
-    font-size: 1rem;
-    color:red;
-    position: relative;
-    top: -1.5rem;
-    left: 2.7rem;
-    background-color: #ffffff;
-    width: fit-content;
+.homeBookingWidget {
+  position: relative;
+  background-color: white;
+ 
+  border-radius: 6.6rem;
+  height: 17.625rem;
+  width: 62.5rem;
+  filter: drop-shadow(0px 10px 20px #0000009e);
+  align-items: left;
 }
-#labelTo
-{
-    font-size: 1rem;
-    color:red;
-    position: relative;
-    top: -1.5rem;
-    left: 1.8rem;
-    background-color: #ffffff;
-    width: fit-content;
+.tripSelector {
+  position: relative;
+  align-items: left;
+  display: flex;
+  left: 5rem;
+  top: 2rem;
 }
-#labelDepart
-{
-    font-size: 1rem;
-    color:red;
-    position: relative;
-    top: -1.5rem;
-    left: 1.8rem;
-    background-color: #ffffff;
-    width: fit-content;
+.tripSelector button {
+  background-color: #ffffff;
+  width: auto;
+  height: 2.5rem;
+  border-radius: 1.4375rem;
+  border-color: black;
+  border-style: solid;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 400;
+  justify-content: center;
+  padding: 0.3125rem 1.25rem;
+  text-align: center;
 }
-.inputData input:focus
-{
-    outline: none;
-}
-.inputData input
-{
-    outline: none;
-    width: 15rem;
-    height: 3.5em;
-    border: none;
-    border-bottom: 1px solid;
-    border-color: red;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 25px;
-    padding-left: 13px;
+.tripSelector ul {
+  display: flex;
+  gap: 10px;
 }
 
-.classSelector
-{
-    display: flex;
-    position: relative;
-    top: 5rem;
-    bottom: 15rem;
-    
-    left: 41rem;
+.inputData {
+  display: flex;
+  position: relative;
+  top: 3rem;
+  right: 10rem;
+  left: 3rem;
 }
 
-.classSelector ul
-{
-    display: flex;
-    gap: 20px;
+.inputData ul {
+  display: flex;
+  gap: 20px;
 }
-.classSelector button
-{
-    background-color:#E9271D;
-    width: 12.5rem;
-    height: 2.5rem;
-    border-radius:1.4375rem;
-    color: white;
-    font-size:1.45rem;
-    font-weight: 400;
-    justify-content: center;
-    padding: 0.3125rem 1.25rem;
-    text-align: center;
+
+#labelFrom {
+  font-size: 1rem;
+  color: red;
+  position: relative;
+  top: -1.5rem;
+  left: 2.7rem;
+  background-color: #ffffff;
+  width: fit-content;
 }
-.classSelector select
-{
-    background-color: white;
-    color: black;
-    border: none;
-    font-size: 25px;
-    font-weight: 400;
-    
+#labelTo {
+  font-size: 1rem;
+  color: red;
+  position: relative;
+  top: -1.5rem;
+  left: 1.8rem;
+  background-color: #ffffff;
+  width: fit-content;
+}
+#labelDepart {
+  font-size: 1rem;
+  color: red;
+  position: relative;
+  top: -1.5rem;
+  left: 1.8rem;
+  background-color: #ffffff;
+  width: fit-content;
+}
+.inputData input:focus {
+  outline: none;
+}
+.inputData input {
+  outline: none;
+  width: 15rem;
+  height: 3.5em;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: red;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 25px;
+  padding-left: 13px;
+}
+
+.classSelector {
+  display: flex;
+  position: relative;
+  top: 5rem;
+  bottom: 15rem;
+
+  left: 41rem;
+}
+
+.classSelector ul {
+  display: flex;
+  gap: 20px;
+}
+.classSelector button {
+  background-color: #e9271d;
+  width: 12.5rem;
+  height: 2.5rem;
+  border-radius: 1.4375rem;
+  color: white;
+  font-size: 1.45rem;
+  font-weight: 400;
+  justify-content: center;
+  padding: 0.3125rem 1.25rem;
+  text-align: center;
+}
+.classSelector select {
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 25px;
+  font-weight: 400;
 }

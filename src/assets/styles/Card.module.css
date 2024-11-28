@@ -1,0 +1,29 @@
+.card   {
+    background-color: #fff;
+    display: flex;
+     width: 45rem;
+     height: 24rem;
+     gap: 2rem;
+     border-radius: 3rem;
+     filter: drop-shadow(0px 10px 20px #0000009e);
+}
+.card > p {
+    color: #000;
+    font-size: 2rem;
+    width: calc(100% - 38rem);
+    font-weight: 700;
+    align-self: center;
+    
+    
+    
+   
+}
+.card > img {
+    position: relative;
+    border-radius: 3rem;
+    object-fit: cover;
+    object-position: center; 
+    overflow: hidden;
+    
+    width: 70%;
+}

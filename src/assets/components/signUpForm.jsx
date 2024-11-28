@@ -114,7 +114,7 @@ function SignUpForm() {
               <p className = {styles.error}>{errors.tel}</p>
               
             </div>
-            <div>{Object.keys(errors).length == 0 && isSubmit ? <p className={styles.success}>Sign Up Successfully</p> : null }np</div>
+            <div>{Object.keys(errors).length == 0 && isSubmit ? <p className={styles.success}>Sign Up Successfully</p> : null }</div>
             <div className={styles.buttonDiv}>
               
                 <button type="submit" className={styles.buttonGroup}>

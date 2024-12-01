@@ -1,4 +1,4 @@
-import styles from '../styles/LoginBar.module.css'
+import styles from '../components styles/LoginBar.module.css'
 import {Link} from 'react-router-dom'
 
 function LoginBar(){

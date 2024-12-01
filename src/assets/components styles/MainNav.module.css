@@ -5,6 +5,32 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
+  .logodiv{
+  width: 20%;
+  z-index: 1;
+  }
+
+  .navdiv{
+   display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+  .logindiv{
+    width: 20%;
+    padding: 2.5%;
+    display: flex;
+    align-self: right;
+    align-items: right;
+    justify-content: right;
+    
+  }
+  .logo{
+    width: 6rem;
+    position: relative;
+    left: 1.5rem;
+    top: 1.5rem;
+  }
 
 header {
   position: fixed;
@@ -27,6 +53,12 @@ nav {
   justify-content: center;
   align-items: center
 }
+nav a{
+  color: #fff;
+}
+nav a:hover{
+  color: #fff;
+}
 
 nav ul {
   display: flex;
@@ -43,7 +75,7 @@ nav li {
   font-weight: 600;
 }
 
-nav a {
+nav li {
   position: relative;
   text-decoration: none;
   color: #fff;
@@ -51,7 +83,7 @@ nav a {
   padding-bottom: 0.3rem;
 }
 
-nav a::after {
+nav li::after {
   content: '';
   position: absolute;
   left: 0;
@@ -62,21 +94,18 @@ nav a::after {
   transition: width 0.3s ease;
 }
 
-nav a:hover::after {
+nav li:hover::after {
   width: 100%;
 }
 
-nav a:hover{
+nav li:hover{
   text-decoration: none;
   color:  #ffffff;
   text-align: center;
 }
 
+
 @media (max-width: 600px) {
-  nav {
-    
-    height: auto;
-  }
 
   nav ul {
     width: 100%;
@@ -86,5 +115,11 @@ nav a:hover{
   nav li {
     font-size: 1rem;
     margin-bottom: 0.5rem;
+  }
+  .logodiv{
+    display: none;
+  }
+  .logindiv{
+    display: none;
   }
 }

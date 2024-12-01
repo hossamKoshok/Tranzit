@@ -1,4 +1,4 @@
-import styles from '../styles/Nav.module.css'
+import styles from '../components styles/Nav.module.css'
 function Nav(){
   const menu = ["Booking", "Tourism", "FAQ", "About"];
   

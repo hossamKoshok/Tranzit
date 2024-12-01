@@ -1,4 +1,4 @@
-import styles from "../styles/Scenery.module.css"
+import styles from "../components styles/Scenery.module.css"
 import Form from "../components/Form"
 function Scenery(){
   return(

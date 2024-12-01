@@ -1,4 +1,4 @@
-import styles from "../styles/Card.module.css"
+import styles from "../components styles/Card.module.css"
 const Card = ({para ,img , alt} )=> {
     return(
         <div className={styles.card}>

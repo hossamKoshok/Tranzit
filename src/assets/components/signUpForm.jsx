@@ -1,4 +1,4 @@
-import styles from "../styles/signUpForm.module.css";
+import styles from "../components styles/signUpForm.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

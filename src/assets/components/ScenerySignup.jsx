@@ -1,4 +1,4 @@
-import styles from "../styles/ScenerySignup.module.css"
+import styles from "../components styles/ScenerySignup.module.css"
 import SignUpForm from "./SignUpForm";
 function ScenerySignup(){
   return(

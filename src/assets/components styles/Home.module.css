@@ -1,0 +1,101 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    cursor: #fff;
+  }
+.homePage {
+  display: flex;
+  background-color: #ffffff;
+  color: #ffffff;
+ width:auto ;
+ 
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  margin-top: 20rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.merger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+.word {
+  position: relative;
+  top: 12rem;
+  left: 1rem;
+  gap: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+.twoCards {
+  display: flex;
+  gap: 2rem;
+}
+.word h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.supporters {
+  margin-top: 15rem;
+  margin-right: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+   font-size: 2rem;
+}
+.supporters img {
+    width: 60rem;
+    margin-right: 10rem;
+}
+.supporters h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.homePage li {
+  list-style: none;
+}
+
+.trainSelector {
+  position: relative;
+  bottom: 9.6rem;
+  left: 41.875rem;
+}
+.trainSelector button {
+  width: auto;
+  height: 2.4rem;
+  margin: 0px;
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+  padding: 0.3125rem 1.25rem;
+  text-align: center;
+  filter: drop-shadow(0px 10px 20px #0000009e);
+  background-color: white;
+  color: black;
+}
+.trainSelector ul {
+  display: flex;
+}
+
+.homeBookingWidget {
+  position: relative;
+  background-color: white;
+ 
+  border-radius: 6.6rem;
+  height: 17.625rem;
+  width: 62.5rem;
+  filter: drop-shadow(0px 10px 20px #0000009e);
+  align-items: left;
+}
+
+
+

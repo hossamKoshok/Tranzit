@@ -1,5 +1,6 @@
-import styles from '../styles/MainNav.module.css'
+import styles from '../components styles/MainNav.module.css'
 import LoginBar from './LoginBar';
+import { Link } from 'react-router-dom';
 function MainNav(){
   const menu = ["Booking", "Tourism", "FAQ", "About"];
   
@@ -8,7 +9,7 @@ function MainNav(){
     <header>
       <nav>
         <div className={styles.logodiv}>
-          <img src='../images/logo.png' alt="logo" className={styles.logo}/>
+          <Link to="/"><img src='../images/logo.png' alt="logo" className={styles.logo}/></Link>
         </div>
 
         <div className={styles.navdiv}>

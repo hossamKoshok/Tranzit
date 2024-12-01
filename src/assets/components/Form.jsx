@@ -1,4 +1,4 @@
-import styles from '../styles/Form.module.css'
+import styles from '../components styles/Form.module.css'
 import {Link} from 'react-router-dom'
 
 function Form(){

@@ -6,6 +6,7 @@ import MainNav from './assets/components/MainNav'
 import LoginBar from './assets/components/LoginBar'
 import Home from './assets/components/Home'
 import Home_Page from './assets/Pages/Home_Page'
+import FAQ from './assets/components/FAQ'
 function App() {
 
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/"> <Home_Page/></Route>
         <Route exact path="/login"> <Scenery/></Route>
         <Route exact path="/signup" > <ScenerySignup/></Route>
+        <Route exact path="/FAQ"> <FAQ/></Route>
         </Switch> 
         </div>
         </div>

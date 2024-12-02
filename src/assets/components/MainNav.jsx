@@ -16,7 +16,7 @@ function MainNav(){
         {menu.map((element) => (
           <ul key={element}>
             <li>
-              <a href="http://">{element}</a>
+              <Link to={"/"+element}>{element}</Link>
             </li>
           </ul>
         ))}

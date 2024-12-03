@@ -9,6 +9,8 @@ import Home_Page from './assets/Pages/Home_Page'
 import Booking_Page from './assets/Pages/Booking_Page'
 import FAQ from './assets/Pages/FAQ'
 import About from './assets/Pages/About'
+import Footer from './assets/components/Footer'
+import Tourism from './assets/Pages/Tourism'
 function App() {
 
   return (
@@ -27,9 +29,12 @@ function App() {
         <Route exact path="/Booking" > <Booking_Page/></Route>
         <Route exact path="/FAQ"><FAQ/></Route>
         <Route exact path="/About"><About/></Route>
+        <Route exact path="/Tourism"><Tourism/></Route>
         </Switch> 
         </div>
+        <Footer style={{zIndex: 10}}/>
         </div>
+        
         </BrowserRouter>
       </div>
      

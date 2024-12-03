@@ -1,85 +1,172 @@
 .AboutPage
 {
+    min-height: auto;
+    width: 100dvw;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    color: #ffffff;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    margin-top: 2rem;
+    padding: 4rem 0;
     box-sizing: border-box;
-    justify-content: start;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color:#f8f8f8 ;
 }
-.AboutPage::before
+
+.contentWrapper
 {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/Faq Background.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
+    max-width: 1200px;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 3rem;
     z-index: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: auto;
 }
-.headerdiv
+.headerSection
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.headerSection h1
+{
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+.mission
+{
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.goalsSection
+{
+    margin-bottom: 4rem;
+}
+.goalsSection h2
+{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.goalsList
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.goalItem
+{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.goalItem:hover
+{
+    transform: translateY(-5px);
+}
+.goalItem h3
+{
+    color: #E9271D;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.goalItem p
+{
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.contactSection
+{
+    text-align: center;
+}
+.contactSection h2
+{
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.contactDetails
 {
     display: flex;
     justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.contactItem
+{
+    display: flex;
     align-items: center;
-    flex-direction: column;
-    z-index: 1;
+    gap: 1rem;
 }
-.AboutPage p
+.iconContact, .iconEmail
 {
-    font-size: 30px;
-    
-}
-.AboutPage h1
-{
-    margin-top: 10%;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5%;
-    z-index: 1;
-}
-.AboutPage ul
-{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    z-index: 1;
-}
-.AboutPage li
-{
-    margin-left: 30px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    z-index: 1;
-}
-.contactus
-{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    z-index: 1;
+    font-size: 2rem;
 }
 .iconContact
 {
-    margin-top: 100px;
-    color:rgb(44, 148, 245);
-    font-size: 80px;
+    color: #2c94f5;
 }
 .iconEmail
 {
-    margin-top: 20px;
-    color:red;
-    font-size:80px; 
+    color: #E9271D;
+}
+.contactItem p
+{
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+/* Media Queries */
+@media screen and (max-width: 768px)
+{
+    .AboutPage
+    {
+        align-items: flex-start;
+        padding: 2rem 0;
+    }
+    .contentWrapper
+    {
+        top: 0;
+        transform: none;
+        margin: 2rem auto;
+    }
+    .headerSection h1
+    {
+        font-size: 2.5rem;
+    }
+    .mission
+    {
+        font-size: 1.1rem;
+    }
+    .goalsList
+    {
+        grid-template-columns: 1fr;
+    }
+    .contactDetails
+    {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .headerSection h1
+    {
+        font-size: 2rem;
+    }
+    .contentWrapper
+    {
+        padding: 1.5rem;
+    }
+    .goalItem
+    {
+        padding: 1.5rem;
+    }
 }

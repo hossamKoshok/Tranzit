@@ -1,5 +1,4 @@
 import styles from "../Pages style/FAQ.module.css"
-import AccordionComp from "../components/AccordionComp.jsx";
 import {
     Accordion,
     AccordionItem,
@@ -8,40 +7,59 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 
-
-const faq=()=>{
-    const Quesions =
-    [
+const FAQ = () => {
+    const questions = [
         {
-            Qs:"Where is Cairo train station?",
-            Ans:"Its in Ramses Railway Station."
+            Qs: "Where is Cairo's main train station located?",
+            Ans: "Cairo's main railway hub, Ramses Station (محطة رمسيس), is located in the heart of downtown Cairo. It serves as the central terminal for Egypt's national railway network."
         },
         {
-            Qs:"How do I make train reservation?",
-            Ans:"Enter your departure and arrival cities and travel dates in the Fare Finder tool on the Home Page, or click the 'Book Now' button in the site header. Add any passenger discounts that you qualify for and the number of travelers, and click 'Find Trains'. You can book up to 8 passengers per reservation and reserve your tickets up to 11 months in advance. Available trains will be shown on the next page. When you find a train that meets your travel needs, click 'Add to Cart' above that train to continue your reservation."
+            Qs: "How do I make a train reservation?",
+            Ans: "Making a reservation is simple:\n\n1. Enter your departure and arrival cities\n2. Select your travel dates\n3. Choose the number of passengers (up to 8 per booking)\n4. Apply any eligible discounts\n5. Click 'Find Trains' to view available options\n\nYou can book tickets up to 11 months in advance."
         },
         {
-            Qs:"What is the price of Metro ticket?",
-            Ans:"The price is 15L.E."
+            Qs: "What is the current Metro ticket price?",
+            Ans: "The standard Metro ticket price is 15 L.E. for a single journey. Different fare options are available for students, seniors, and frequent travelers. Prices may vary based on the number of stations traveled."
         },
         {
-            Qs:"How do I make train reservation?",
-            Ans:"Enter your departure and arrival cities and travel dates in the Fare Finder tool on the Home Page, or click the 'Book Now' button in the site header. Add any passenger discounts that you qualify for and the number of travelers, and click 'Find Trains'. You can book up to 8 passengers per reservation and reserve your tickets up to 11 months in advance. Available trains will be shown on the next page. When you find a train that meets your travel needs, click 'Add to Cart' above that train to continue your reservation."
+            Qs: "What payment methods are accepted?",
+            Ans: "We accept multiple payment methods including:\n\n• Credit/Debit cards (Visa, Mastercard)\n• Mobile wallets\n• Fawry Pay\n• Cash payment at station counters"
+        },
+        {
+            Qs: "What is the luggage allowance on trains?",
+            Ans: "Each passenger is allowed:\n\n• 2 pieces of hand luggage\n• Maximum weight of 23kg per piece\n• Maximum dimensions of 158cm (length + width + height)\n\nAdditional or oversized luggage may incur extra charges."
         }
-    ]
-    return(
+    ];
+
+    return (
         <div className={styles.FAQPage}>
-            <div className={styles.headerdiv}>
-                <h1>Top Frequently Asked Questions</h1>
-            </div>
-            <div className={styles.accordiondiv}> 
-                <Accordion className={styles.accordion}>
-                    {Quesions.map((element)=>(
-                        <AccordionComp Qs={element.Qs} Ans={element.Ans}/>
-                    ))}
-                </Accordion>
+            <div className={styles.contentWrapper}>
+                <div className={styles.headerSection}>
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Find answers to common questions about our services and booking process</p>
+                </div>
+                
+                <div className={styles.accordionSection}> 
+                    <Accordion className={styles.accordion}>
+                        {questions.map((item, index) => (
+                            <AccordionItem key={index} className={styles.accordion__item}>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton className={styles.accordion__button}>
+                                        {item.Qs}
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel className={styles.accordion__panel}>
+                                    {item.Ans.split('\n').map((text, i) => (
+                                        <p key={i}>{text}</p>
+                                    ))}
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
+                </div>
             </div>
         </div>
-    )
+    );
 }
-export default faq
+
+export default FAQ;

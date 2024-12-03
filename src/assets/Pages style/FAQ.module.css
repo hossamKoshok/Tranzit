@@ -3,130 +3,174 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    color: #ffffff;
     width: 100vw;
-    padding: 0;
-    margin: 0;
-    margin-top: 2rem;
-    box-sizing: border-box;
-    justify-content: start;
-    flex-direction: column;
     min-height: 100vh;
+    padding: 4rem 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
-.FAQPage::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/Faq Background.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
+
+.contentWrapper {
+    max-width: 1000px;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 3rem;
     z-index: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
-.FAQPage h1
-{
-    margin-top: 10%;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5%;
-    z-index: 1;
+.headerSection {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
 }
-.headerdiv
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.headerSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
-.accordiondiv
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding: 20px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    gap: 10px;
+
+.headerSection p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
 }
+
+.accordionSection {
+    width: 100%;
+}
+
 .accordion {
     width: 100%;
-    
-    
 }
 
-.accordion__item + .accordion__item {
-    border-top: 3px solid rgb(141, 141, 141);
+.accordion__item {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .accordion__button {
     font-family: 'Outfit', sans-serif;
-    background-color: rgba(255, 255, 255, 0.9);
-    border:none;
-    color: rgb(77, 77, 77);
-    font-size: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 18px;
+    background-color: white;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 1.5rem;
     width: 100%;
-    height: 5dvw;
-    text-align: center;
+    text-align: left;
     border: none;
-    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 .accordion__button:hover {
-    background-color: #ddd;
-    transition: 0.3s;
+    background-color: #ffffff;
 }
 
 .accordion__button:before {
     display: inline-block;
     content: '';
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     margin-right: 12px;
-    border-bottom: 2px solid currentColor;
-    border-right: 2px solid currentColor;
+    border-bottom: 2px solid #E9271D;
+    border-right: 2px solid #E9271D;
     transform: rotate(-45deg);
+    transition: transform 0.3s ease;
 }
 
-.accordion__button[aria-expanded='true']::before,
-.accordion__button[aria-selected='true']::before {
+.accordion__button[aria-expanded='true'] {
+    background-color: #f8f8f8;
+}
+
+.accordion__button[aria-expanded='true']::before {
     transform: rotate(45deg);
 }
 
-[hidden] {
-    display: none;
-}
-
 .accordion__panel {
-    padding: 20px;
-    animation: fadein 0.35s ease-in;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    font-size: 25px;
-    background: rgba(150, 149, 149, 0);
-    backdrop-filter: blur(20px);
+    padding: 1.5rem;
+    background: white;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-/* -------------------------------------------------- */
-/* ---------------- Animation part ------------------ */
-/* -------------------------------------------------- */
+.accordion__panel p {
+    margin: 0.5rem 0;
+}
 
+.accordion__panel p:first-child {
+    margin-top: 0;
+}
+
+.accordion__panel p:last-child {
+    margin-bottom: 0;
+}
+
+/* Animation */
 @keyframes fadein {
     0% {
         opacity: 0;
+        transform: translateY(-10px);
     }
-
     100% {
         opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accordion__panel {
+    animation: fadein 0.35s ease-in;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .contentWrapper {
+        width: 95%;
+        padding: 2rem;
+    }
+
+    .headerSection h1 {
+        font-size: 2rem;
+    }
+
+    .headerSection p {
+        font-size: 1rem;
+    }
+
+    .accordion__button {
+        font-size: 1rem;
+        padding: 1.2rem;
+    }
+
+    .accordion__panel {
+        padding: 1.2rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contentWrapper {
+        padding: 1.5rem;
+    }
+
+    .headerSection h1 {
+        font-size: 1.75rem;
+    }
+
+    .accordion__button {
+        padding: 1rem;
+    }
+
+    .accordion__panel {
+        padding: 1rem;
     }
 }
 

@@ -149,19 +149,19 @@ body{
   
   #labelFrom {
     font-size: 1rem;
-    color: red;
+    color: #E9271D;
     position: relative;
     width: fit-content;
   }
   #labelTo {
     font-size: 1rem;
-    color: red;
+    color: #E9271D;
 
     width: fit-content;
   }
   #labelDepart {
     font-size: 1rem;
-    color: red;
+    color: #E9271D;
 
 
     width: fit-content;

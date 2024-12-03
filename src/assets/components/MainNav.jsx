@@ -13,13 +13,12 @@ function MainNav(){
         </div>
 
         <div className={styles.navdiv}>
-        {menu.map((element) => (
-          <ul key={element}>
-            <li>
-              <Link to={"/"+element}>{element}</Link>
-            </li>
+          <ul>
+            <li><Link to="/Booking">Booking</Link></li>
+            <li><Link to="/Tourism">Tourism</Link></li>
+            <li><Link to="/FAQ">FAQ</Link></li>
+            <li><Link to="/About">About</Link></li>
           </ul>
-        ))}
         </div>
         
         <div className={styles.logindiv}>

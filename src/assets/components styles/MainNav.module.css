@@ -53,7 +53,7 @@ nav {
   height: 5vh;
   width: 100vw;
   background: #e9271dd3;
-  
+  backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   align-items: center

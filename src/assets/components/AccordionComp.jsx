@@ -5,7 +5,7 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-import styles from "../components styles/FAQ.module.css"
+import styles from "../Pages style/FAQ.module.css"
 
 function AccordionComp({Qs,Ans}){
     return(

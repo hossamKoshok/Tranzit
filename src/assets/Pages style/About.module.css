@@ -1,0 +1,85 @@
+.AboutPage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    justify-content: start;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.AboutPage::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Faq Background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    z-index: 0;
+}
+.headerdiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.AboutPage p
+{
+    font-size: 30px;
+    
+}
+.AboutPage h1
+{
+    margin-top: 10%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5%;
+    z-index: 1;
+}
+.AboutPage ul
+{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.AboutPage li
+{
+    margin-left: 30px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.contactus
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    z-index: 1;
+}
+.iconContact
+{
+    margin-top: 100px;
+    color:rgb(44, 148, 245);
+    font-size: 80px;
+}
+.iconEmail
+{
+    margin-top: 20px;
+    color:red;
+    font-size:80px; 
+}

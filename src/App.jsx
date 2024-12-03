@@ -8,6 +8,7 @@ import Home from './assets/components/Home'
 import Home_Page from './assets/Pages/Home_Page'
 import Booking_Page from './assets/Pages/Booking_Page'
 import FAQ from './assets/Pages/FAQ'
+import About from './assets/Pages/About'
 function App() {
 
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/signup" > <ScenerySignup/></Route>
         <Route exact path="/Booking" > <Booking_Page/></Route>
         <Route exact path="/FAQ"><FAQ/></Route>
+        <Route exact path="/About"><About/></Route>
         </Switch> 
         </div>
         </div>

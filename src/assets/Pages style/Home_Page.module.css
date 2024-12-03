@@ -259,11 +259,11 @@ body{
   /* For tablets */
   @media screen and (max-width: 1024px) {
     .HomePageDropDiv{
-      top: 100px;
+      margin-bottom: 5rem;
     }
     .quickSearchBarDiv {
       width: 70%;
-      top: -55rem;
+      margin-top: 10rem;
     }
 
     .inputData {

@@ -1,36 +1,29 @@
 body{
     background-color: #ffffff;
-    z-index: -1;
 }
-
+.HomePageDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100dvw;
+    height: 200dvh;
+    overflow-y: scroll;
+}
 .HomePageDropDiv{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 40%;
+    background-image: url("../images/back drop.png");
+    background-size: cover;
+    background-position: bottom;
     z-index: 0;
-    top: -50px;
-}
-.dropImage{
-   position: relative;
-   top: -100px;
-    width: 100%;
-    z-index: 1;
-}
-.dropSvg{
-    position: relative;
-    width: 100%;
-    z-index: 2;
-    top: -500px;
 }
 .quickSearchBarDiv{
    z-index: 3;
-   position: relative;
    border-radius: 6.6rem;
-   top: -55rem;
    width: 50%;
    height: auto;
    padding-bottom: 2rem;
@@ -234,6 +227,32 @@ body{
     font-size: 25px;
     font-weight: 400;
   }
+  .newsDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+  }
+  .newsHeader{
+    font-size: 40px;
+    font-weight: 800;
+    color: #000000;
+    margin-left: 2rem;
+
+  }
+  .newsContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+  }
+
+
   
   /* Add these media queries at the end of your file */
 

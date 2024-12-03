@@ -6,13 +6,10 @@ const Home_Page = () => {
     const [activeTrip, setActiveTrip] = useState('One-way');
 
     return (
-        <div>
+        <div className={styles.HomePageDiv}>
 
             <div className={styles.HomePageDropDiv}>
-                <img src={"../images/homePageDrop.png"} alt="logo" className={styles.dropImage} />
-                <svg width="1920" height="592" viewBox="0 0 1920 200" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.dropSvg}>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V591.898H1920V20.1302C1702.56 101.732 1364.53 154.159 984.912 154.159C574.923 154.159 213.451 93.0087 0 0Z" fill="white" />
-                </svg>
+                
                 <div className={styles.quickSearchBarDiv}>
                         <div className={styles.trainSelector}>
                             <ul>
@@ -110,7 +107,12 @@ const Home_Page = () => {
                 </div>
             </div>
 
-
+            <div className={styles.newsDiv}>
+                <h1 className={styles.newsHeader}>Latest News: </h1>
+                <div className={styles.newsContainer}>
+                    
+                </div>
+            </div>
 
 
 

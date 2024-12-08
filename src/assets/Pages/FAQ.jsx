@@ -40,7 +40,7 @@ const FAQ = () => {
                 </div>
                 
                 <div className={styles.accordionSection}> 
-                    <Accordion className={styles.accordion}>
+                    <Accordion className={styles.accordion} allowZeroExpanded="true">
                         {questions.map((item, index) => (
                             <AccordionItem key={index} className={styles.accordion__item}>
                                 <AccordionItemHeading>

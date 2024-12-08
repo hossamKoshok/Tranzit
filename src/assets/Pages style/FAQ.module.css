@@ -71,7 +71,8 @@
 }
 
 .accordion__button:hover {
-    background-color: #ffffff;
+    background-color: #E9271D;;
+    color: #f8f8f8;
 }
 
 .accordion__button:before {

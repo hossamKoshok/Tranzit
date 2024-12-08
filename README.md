@@ -1,3 +1,7 @@
+# Project made by
+- Abdelrhman Khaled 211011141 
+- Hossam Koshk 211002419
+- Omar Ehab 211000490
 # Overview
 Tranzit aims to simplify the process of booking train tickets for travelers. It offers a user-friendly platform where users can search for train schedules, book tickets, and manage their travel plans efficiently.
 # Key Features
